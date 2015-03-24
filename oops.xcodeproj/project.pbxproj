@@ -11,7 +11,6 @@
 		145F5BD41AC1A39D00847754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD31AC1A39D00847754 /* AppDelegate.m */; };
 		145F5BD71AC1A39D00847754 /* oops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD51AC1A39D00847754 /* oops.xcdatamodeld */; };
 		145F5BDA1AC1A39D00847754 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD91AC1A39D00847754 /* ViewController.m */; };
-		145F5BDD1AC1A39D00847754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145F5BDB1AC1A39D00847754 /* Main.storyboard */; };
 		145F5BDF1AC1A39D00847754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145F5BDE1AC1A39D00847754 /* Images.xcassets */; };
 		145F5BE21AC1A39D00847754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145F5BE01AC1A39D00847754 /* LaunchScreen.xib */; };
 		145F5BEE1AC1A39D00847754 /* oopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BED1AC1A39D00847754 /* oopsTests.m */; };
@@ -36,7 +35,6 @@
 		145F5BD61AC1A39D00847754 /* oops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = oops.xcdatamodel; sourceTree = "<group>"; };
 		145F5BD81AC1A39D00847754 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		145F5BD91AC1A39D00847754 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		145F5BDC1AC1A39D00847754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		145F5BDE1AC1A39D00847754 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		145F5BE11AC1A39D00847754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		145F5BE71AC1A39D00847754 /* oopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +85,6 @@
 				145F5BD31AC1A39D00847754 /* AppDelegate.m */,
 				145F5BD81AC1A39D00847754 /* ViewController.h */,
 				145F5BD91AC1A39D00847754 /* ViewController.m */,
-				145F5BDB1AC1A39D00847754 /* Main.storyboard */,
 				145F5BDE1AC1A39D00847754 /* Images.xcassets */,
 				145F5BE01AC1A39D00847754 /* LaunchScreen.xib */,
 				145F5BD51AC1A39D00847754 /* oops.xcdatamodeld */,
@@ -202,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145F5BDD1AC1A39D00847754 /* Main.storyboard in Resources */,
 				145F5BE21AC1A39D00847754 /* LaunchScreen.xib in Resources */,
 				145F5BDF1AC1A39D00847754 /* Images.xcassets in Resources */,
 			);
@@ -248,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		145F5BDB1AC1A39D00847754 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				145F5BDC1AC1A39D00847754 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		145F5BE01AC1A39D00847754 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
