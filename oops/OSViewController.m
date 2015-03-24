@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 sean. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "OSViewController.h"
 
-@interface ViewController ()
+@interface OSViewController ()
 
 @end
 
-@implementation ViewController
+@implementation OSViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
