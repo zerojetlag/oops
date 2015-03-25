@@ -10,11 +10,11 @@
 		145F5BD11AC1A39D00847754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD01AC1A39D00847754 /* main.m */; };
 		145F5BD41AC1A39D00847754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD31AC1A39D00847754 /* AppDelegate.m */; };
 		145F5BD71AC1A39D00847754 /* oops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD51AC1A39D00847754 /* oops.xcdatamodeld */; };
-		145F5BDA1AC1A39D00847754 /* OSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD91AC1A39D00847754 /* OSViewController.m */; };
 		145F5BDF1AC1A39D00847754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145F5BDE1AC1A39D00847754 /* Images.xcassets */; };
 		145F5BE21AC1A39D00847754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145F5BE01AC1A39D00847754 /* LaunchScreen.xib */; };
 		145F5BEE1AC1A39D00847754 /* oopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BED1AC1A39D00847754 /* oopsTests.m */; };
-		14CD1F5C1AC1B4570001AD0E /* OSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CD1F5B1AC1B4570001AD0E /* OSView.xib */; };
+		14FD3F1C1AC2A65300067E12 /* OSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FD3F1A1AC2A65300067E12 /* OSRootViewController.m */; };
+		14FD3F1D1AC2A65300067E12 /* OSRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FD3F1B1AC2A65300067E12 /* OSRootViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +34,14 @@
 		145F5BD21AC1A39D00847754 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		145F5BD31AC1A39D00847754 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		145F5BD61AC1A39D00847754 /* oops.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = oops.xcdatamodel; sourceTree = "<group>"; };
-		145F5BD81AC1A39D00847754 /* OSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSViewController.h; sourceTree = "<group>"; };
-		145F5BD91AC1A39D00847754 /* OSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSViewController.m; sourceTree = "<group>"; };
 		145F5BDE1AC1A39D00847754 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		145F5BE11AC1A39D00847754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		145F5BE71AC1A39D00847754 /* oopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145F5BEC1AC1A39D00847754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		145F5BED1AC1A39D00847754 /* oopsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oopsTests.m; sourceTree = "<group>"; };
-		14CD1F5B1AC1B4570001AD0E /* OSView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSView.xib; sourceTree = "<group>"; };
+		14FD3F191AC2A65300067E12 /* OSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRootViewController.h; sourceTree = "<group>"; };
+		14FD3F1A1AC2A65300067E12 /* OSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRootViewController.m; sourceTree = "<group>"; };
+		14FD3F1B1AC2A65300067E12 /* OSRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSRootViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +83,11 @@
 		145F5BCD1AC1A39D00847754 /* oops */ = {
 			isa = PBXGroup;
 			children = (
+				14FD3F191AC2A65300067E12 /* OSRootViewController.h */,
+				14FD3F1A1AC2A65300067E12 /* OSRootViewController.m */,
+				14FD3F1B1AC2A65300067E12 /* OSRootViewController.xib */,
 				145F5BD21AC1A39D00847754 /* AppDelegate.h */,
 				145F5BD31AC1A39D00847754 /* AppDelegate.m */,
-				145F5BD81AC1A39D00847754 /* OSViewController.h */,
-				145F5BD91AC1A39D00847754 /* OSViewController.m */,
-				14CD1F5B1AC1B4570001AD0E /* OSView.xib */,
 				145F5BDE1AC1A39D00847754 /* Images.xcassets */,
 				145F5BE01AC1A39D00847754 /* LaunchScreen.xib */,
 				145F5BD51AC1A39D00847754 /* oops.xcdatamodeld */,
@@ -202,9 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14FD3F1D1AC2A65300067E12 /* OSRootViewController.xib in Resources */,
 				145F5BE21AC1A39D00847754 /* LaunchScreen.xib in Resources */,
 				145F5BDF1AC1A39D00847754 /* Images.xcassets in Resources */,
-				14CD1F5C1AC1B4570001AD0E /* OSView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +224,7 @@
 			files = (
 				145F5BD41AC1A39D00847754 /* AppDelegate.m in Sources */,
 				145F5BD71AC1A39D00847754 /* oops.xcdatamodeld in Sources */,
-				145F5BDA1AC1A39D00847754 /* OSViewController.m in Sources */,
+				14FD3F1C1AC2A65300067E12 /* OSRootViewController.m in Sources */,
 				145F5BD11AC1A39D00847754 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
