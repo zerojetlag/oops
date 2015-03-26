@@ -33,5 +33,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tv dequeueReusableCellWithIdentifier:@"cell"];
+    if( nil == cell){
+        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
+    }
+    return cell;
+}
+
+- (NSInteger *)tableView:
+    (UITableView *) tv numberOfRowsInSection:(NSInteger)section{
+    return 3;
+}
 
 @end

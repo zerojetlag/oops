@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OSRootViewController : UIViewController
-
+@interface OSRootViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
