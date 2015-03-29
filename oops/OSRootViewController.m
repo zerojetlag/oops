@@ -38,12 +38,17 @@
     if( nil == cell){
         cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
     }
+    cell.textLabel.text = @"sean";
     return cell;
 }
 
-- (NSInteger *)tableView:
-    (UITableView *) tv numberOfRowsInSection:(NSInteger)section{
+- (NSInteger )tableView:(UITableView *) tv numberOfRowsInSection:(NSInteger)section{
     return 3;
+}
+
+- (void)tableview:(UITableView *)tv
+    didSelectedRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
