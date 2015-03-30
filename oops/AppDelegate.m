@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "OSRootViewController.h"
+#import "City.h"
 
 @interface AppDelegate ()
 
@@ -19,10 +20,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] ;
-    [self.window makeKeyAndVisible];
+    
+    City *sanFrancisco = [[City alloc] init];
+    sanFrancisco.cityName = @"San Francisco";
+    sanFrancisco.cityDescription = @"test 1";
+    sanFrancisco.cityPicture = [UIImage imageNamed:@"san.jpg"];
+    
+    City *london = [[City alloc] init];
+    london.cityName = @"London";
+    london.cityDescription = @"test 1";
+    london.cityPicture = [UIImage imageNamed:@"london.jpg"];
+    
+    City *madrid = [[City alloc] init];
+    madrid.cityName = @"Madrid";
+    madrid.cityDescription = @"test 1";
+    madrid.cityPicture = [UIImage imageNamed:@"fox.jpg"];
+
+    self.cities = [[NSMutableArray alloc] initWithObjects:london, sanFrancisco, madrid, nil];
     
     OSRootViewController *rootViewController = [[OSRootViewController alloc] init];
     self.window.rootViewController = rootViewController;
+    [self.window makeKeyAndVisible];
+
     
     return YES;
 }

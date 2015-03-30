@@ -7,6 +7,8 @@
 //
 
 #import "OSRootViewController.h"
+#import "AppDelegate.h"
+#import "City.h"
 
 @interface OSRootViewController ()
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    cities = delegate.cities;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,16 +42,25 @@
     if( nil == cell){
         cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = @"sean";
+    City *thisCity = [cities objectAtIndex:indexPath.row];
+    cell.textLabel.text = thisCity.cityName;
     return cell;
 }
 
 - (NSInteger )tableView:(UITableView *) tv numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return [cities count];
 }
 
 - (void)tableview:(UITableView *)tv
     didSelectedRowAtIndexPath:(NSIndexPath *)indexPath{
+    City *thisCity = [cities objectAtIndex:indexPath.row];
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:thisCity.cityName
+                                message:thisCity.cityDescription
+                               delegate:nil
+                      cancelButtonTitle:nil
+                      otherButtonTitles:@"OK", nil];
+    [alert show];
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
