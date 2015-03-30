@@ -47,21 +47,21 @@
     return cell;
 }
 
-- (NSInteger )tableView:(UITableView *) tv numberOfRowsInSection:(NSInteger)section{
+- (NSInteger )tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger)section{
     return [cities count];
 }
 
-- (void)tableview:(UITableView *)tv
-    didSelectedRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     City *thisCity = [cities objectAtIndex:indexPath.row];
     UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle:thisCity.cityName
-                                message:thisCity.cityDescription
-                               delegate:nil
-                      cancelButtonTitle:nil
-                      otherButtonTitles:@"OK", nil];
+                          message:thisCity.cityDescription
+                          delegate:nil
+                          cancelButtonTitle:nil
+                          otherButtonTitles:@"OK", nil];
     [alert show];
-    [tv deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
