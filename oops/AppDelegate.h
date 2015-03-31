@@ -18,6 +18,8 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, strong) NSMutableArray *cities;
+@property (nonatomic, strong) UINavigationController *navController;
+@property (nonatomic, strong) OSRootViewController *rootViewController;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

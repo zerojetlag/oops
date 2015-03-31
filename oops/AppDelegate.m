@@ -38,8 +38,9 @@
 
     self.cities = [[NSMutableArray alloc] initWithObjects:london, sanFrancisco, madrid, nil];
     
-    OSRootViewController *rootViewController = [[OSRootViewController alloc] init];
-    self.window.rootViewController = rootViewController;
+    self.rootViewController = [[OSRootViewController alloc] initWithNibName:@"OSRootViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController: self.rootViewController];
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
 
     

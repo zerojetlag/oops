@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141C4FE31ACB08960011F9FB /* OSCityShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141C4FE11ACB08960011F9FB /* OSCityShowViewController.m */; };
+		141C4FE41ACB08960011F9FB /* OSCityShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141C4FE21ACB08960011F9FB /* OSCityShowViewController.xib */; };
 		145F5BD11AC1A39D00847754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD01AC1A39D00847754 /* main.m */; };
 		145F5BD41AC1A39D00847754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD31AC1A39D00847754 /* AppDelegate.m */; };
 		145F5BD71AC1A39D00847754 /* oops.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BD51AC1A39D00847754 /* oops.xcdatamodeld */; };
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		141C4FE01ACB08960011F9FB /* OSCityShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCityShowViewController.h; sourceTree = "<group>"; };
+		141C4FE11ACB08960011F9FB /* OSCityShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCityShowViewController.m; sourceTree = "<group>"; };
+		141C4FE21ACB08960011F9FB /* OSCityShowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSCityShowViewController.xib; sourceTree = "<group>"; };
 		145F5BCB1AC1A39D00847754 /* oops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145F5BCF1AC1A39D00847754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		145F5BD01AC1A39D00847754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +101,9 @@
 				14FDA9791AC8478B007BB7D6 /* City.m */,
 				14FD3F191AC2A65300067E12 /* OSRootViewController.h */,
 				14FD3F1A1AC2A65300067E12 /* OSRootViewController.m */,
+				141C4FE01ACB08960011F9FB /* OSCityShowViewController.h */,
+				141C4FE11ACB08960011F9FB /* OSCityShowViewController.m */,
+				141C4FE21ACB08960011F9FB /* OSCityShowViewController.xib */,
 				14FD3F1B1AC2A65300067E12 /* OSRootViewController.xib */,
 				145F5BD21AC1A39D00847754 /* AppDelegate.h */,
 				145F5BD31AC1A39D00847754 /* AppDelegate.m */,
@@ -216,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141C4FE41ACB08960011F9FB /* OSCityShowViewController.xib in Resources */,
 				146EAC141AC9786900476A9B /* london.jpg in Resources */,
 				14FD3F1D1AC2A65300067E12 /* OSRootViewController.xib in Resources */,
 				145F5BE21AC1A39D00847754 /* LaunchScreen.xib in Resources */,
@@ -241,6 +250,7 @@
 			files = (
 				14FDA97A1AC8478B007BB7D6 /* City.m in Sources */,
 				145F5BD41AC1A39D00847754 /* AppDelegate.m in Sources */,
+				141C4FE31ACB08960011F9FB /* OSCityShowViewController.m in Sources */,
 				145F5BD71AC1A39D00847754 /* oops.xcdatamodeld in Sources */,
 				14FD3F1C1AC2A65300067E12 /* OSRootViewController.m in Sources */,
 				145F5BD11AC1A39D00847754 /* main.m in Sources */,

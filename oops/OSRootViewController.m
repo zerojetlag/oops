@@ -9,6 +9,7 @@
 #import "OSRootViewController.h"
 #import "AppDelegate.h"
 #import "City.h"
+#import "OSCityShowViewController.h"
 
 @interface OSRootViewController ()
 
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Sean";
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     cities = delegate.cities;
 }
@@ -54,13 +56,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     City *thisCity = [cities objectAtIndex:indexPath.row];
-    UIAlertView *alert = [[UIAlertView alloc]
-                          initWithTitle:thisCity.cityName
-                          message:thisCity.cityDescription
-                          delegate:nil
-                          cancelButtonTitle:nil
-                          otherButtonTitles:@"OK", nil];
-    [alert show];
+//    UIAlertView *alert = [[UIAlertView alloc]
+//                          initWithTitle:thisCity.cityName
+//                          message:thisCity.cityDescription
+//                          delegate:nil
+//                          cancelButtonTitle:nil
+//                          otherButtonTitles:@"OK", nil];
+//    [alert show];
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    OSCityShowViewController *cityShow = [[OSCityShowViewController alloc] init];
+    [delegate.navController pushViewController:cityShow animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
