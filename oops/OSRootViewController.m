@@ -64,7 +64,7 @@
 //                          otherButtonTitles:@"OK", nil];
 //    [alert show];
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    OSCityShowViewController *cityShow = [[OSCityShowViewController alloc] init];
+    OSCityShowViewController *cityShow = [[OSCityShowViewController alloc] initWithIndexPath:indexPath];
     [delegate.navController pushViewController:cityShow animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface OSCityShowViewController : UIViewController
-
+@class NSIndexPath;
+@interface OSCityShowViewController : UIViewController{
+    NSIndexPath *index;
+    IBOutlet UITextField *descriptionView;
+    IBOutlet UIImageView *pictureView;
+}
+- (id)initWithIndexPath:(NSIndexPath *)indexPath;
 @end

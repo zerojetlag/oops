@@ -7,6 +7,8 @@
 //
 
 #import "OSCityShowViewController.h"
+#import "City.h"
+#import "AppDelegate.h"
 
 @interface OSCityShowViewController ()
 
@@ -17,11 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    City *thisCity = delegate.cities[index.row];
+    self.title = thisCity.cityName;
+    descriptionView.text = thisCity.cityDescription;
+    descriptionView.enabled = NO;
+    pictureView.image = thisCity.cityPicture;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (id)initWithIndexPath: (NSIndexPath *)indexPath{
+    if (self = [super init]) {
+        index = indexPath;
+    }
+    return self;
 }
 
 /*
