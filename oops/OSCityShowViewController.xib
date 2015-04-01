@@ -24,11 +24,8 @@
                         <outlet property="delegate" destination="-1" id="DvJ-HS-yVe"/>
                     </connections>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHe-lj-cBM">
-                    <rect key="frame" x="180" y="63" width="240" height="128"/>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDz-Yg-oij">
-                    <rect key="frame" x="180" y="63" width="240" height="128"/>
+                    <rect key="frame" x="10" y="80" width="240" height="128"/>
                     <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                 </imageView>
             </subviews>
