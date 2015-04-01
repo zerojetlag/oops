@@ -21,6 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Sean";
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     cities = delegate.cities;
 }
@@ -44,18 +45,28 @@
     if( nil == cell){
         cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
     }
-    City *thisCity = [cities objectAtIndex:indexPath.row];
-    cell.textLabel.text = thisCity.cityName;
+    if(indexPath.row < cities.count){
+        City *thisCity = [cities objectAtIndex:indexPath.row];
+        cell.textLabel.text = thisCity.cityName;
+    } else {
+        cell.textLabel.text = @"Add a city...";
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+        cell.editingAccessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
     return cell;
 }
 
 - (NSInteger )tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger)section{
-    return [cities count];
+    NSInteger count = cities.count;
+    if(self.editing){
+        count = count + 1;
+    }
+    return count;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    City *thisCity = [cities objectAtIndex:indexPath.row];
+//    City *thisCity = [cities objectAtIndex:indexPath.row];
 //    UIAlertView *alert = [[UIAlertView alloc]
 //                          initWithTitle:thisCity.cityName
 //                          message:thisCity.cityDescription
@@ -67,6 +78,21 @@
     OSCityShowViewController *cityShow = [[OSCityShowViewController alloc] initWithIndexPath:indexPath];
     [delegate.navController pushViewController:cityShow animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void) setEditing:(BOOL)editing animated:(BOOL) animated{
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:animated];
+    [self.tableView reloadData];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tv
+    editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row < cities.count){
+        return UITableViewCellEditingStyleDelete;
+    } else {
+        return UITableViewCellEditingStyleInsert;
+    }
 }
 
 @end
