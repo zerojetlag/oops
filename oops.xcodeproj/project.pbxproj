@@ -15,9 +15,9 @@
 		145F5BDF1AC1A39D00847754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145F5BDE1AC1A39D00847754 /* Images.xcassets */; };
 		145F5BE21AC1A39D00847754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145F5BE01AC1A39D00847754 /* LaunchScreen.xib */; };
 		145F5BEE1AC1A39D00847754 /* oopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 145F5BED1AC1A39D00847754 /* oopsTests.m */; };
-		146EAC131AC9786900476A9B /* san.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146EAC101AC9786900476A9B /* san.jpg */; };
-		146EAC141AC9786900476A9B /* london.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146EAC111AC9786900476A9B /* london.jpg */; };
-		146EAC151AC9786900476A9B /* fox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 146EAC121AC9786900476A9B /* fox.jpg */; };
+		14DA33E61AD4189100776C74 /* fox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14DA33E31AD4189100776C74 /* fox.jpg */; };
+		14DA33E71AD4189100776C74 /* london.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14DA33E41AD4189100776C74 /* london.jpg */; };
+		14DA33E81AD4189100776C74 /* san.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14DA33E51AD4189100776C74 /* san.jpg */; };
 		14FD3F1C1AC2A65300067E12 /* OSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FD3F1A1AC2A65300067E12 /* OSRootViewController.m */; };
 		14FD3F1D1AC2A65300067E12 /* OSRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14FD3F1B1AC2A65300067E12 /* OSRootViewController.xib */; };
 		14FDA97A1AC8478B007BB7D6 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 14FDA9791AC8478B007BB7D6 /* City.m */; };
@@ -48,9 +48,9 @@
 		145F5BE71AC1A39D00847754 /* oopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145F5BEC1AC1A39D00847754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		145F5BED1AC1A39D00847754 /* oopsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oopsTests.m; sourceTree = "<group>"; };
-		146EAC101AC9786900476A9B /* san.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = san.jpg; path = ../../../Pictures/san.jpg; sourceTree = "<group>"; };
-		146EAC111AC9786900476A9B /* london.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = london.jpg; path = ../../../Pictures/london.jpg; sourceTree = "<group>"; };
-		146EAC121AC9786900476A9B /* fox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fox.jpg; path = ../../../Pictures/fox.jpg; sourceTree = "<group>"; };
+		14DA33E31AD4189100776C74 /* fox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fox.jpg; sourceTree = "<group>"; };
+		14DA33E41AD4189100776C74 /* london.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = london.jpg; sourceTree = "<group>"; };
+		14DA33E51AD4189100776C74 /* san.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = san.jpg; sourceTree = "<group>"; };
 		14FD3F191AC2A65300067E12 /* OSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRootViewController.h; sourceTree = "<group>"; };
 		14FD3F1A1AC2A65300067E12 /* OSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRootViewController.m; sourceTree = "<group>"; };
 		14FD3F1B1AC2A65300067E12 /* OSRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSRootViewController.xib; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 		145F5BCE1AC1A39D00847754 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				146EAC101AC9786900476A9B /* san.jpg */,
-				146EAC111AC9786900476A9B /* london.jpg */,
-				146EAC121AC9786900476A9B /* fox.jpg */,
+				14DA33E31AD4189100776C74 /* fox.jpg */,
+				14DA33E41AD4189100776C74 /* london.jpg */,
+				14DA33E51AD4189100776C74 /* san.jpg */,
 				145F5BCF1AC1A39D00847754 /* Info.plist */,
 				145F5BD01AC1A39D00847754 /* main.m */,
 			);
@@ -225,12 +225,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				141C4FE41ACB08960011F9FB /* OSCityShowViewController.xib in Resources */,
-				146EAC141AC9786900476A9B /* london.jpg in Resources */,
+				14DA33E71AD4189100776C74 /* london.jpg in Resources */,
+				14DA33E61AD4189100776C74 /* fox.jpg in Resources */,
+				14DA33E81AD4189100776C74 /* san.jpg in Resources */,
 				14FD3F1D1AC2A65300067E12 /* OSRootViewController.xib in Resources */,
 				145F5BE21AC1A39D00847754 /* LaunchScreen.xib in Resources */,
-				146EAC151AC9786900476A9B /* fox.jpg in Resources */,
 				145F5BDF1AC1A39D00847754 /* Images.xcassets in Resources */,
-				146EAC131AC9786900476A9B /* san.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

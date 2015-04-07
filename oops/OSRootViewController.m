@@ -80,7 +80,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-- (void) setEditing:(BOOL)editing animated:(BOOL) animated{
+- (void)setEditing:(BOOL)editing animated:(BOOL) animated{
     if (editing != self.editing) {
         [super setEditing:editing animated:animated];
         [self.tableView setEditing:editing animated:animated];
@@ -104,5 +104,21 @@
         return UITableViewCellEditingStyleInsert;
     }
 }
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete){
+        [cities removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    }
+}
+
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (indexPath.row < cities.count){
+//        return YES;
+//    } else {
+//        return NO;
+//    }
+//    return YES;
+//}
 
 @end
